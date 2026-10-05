@@ -1,8 +1,8 @@
-# MiniExcelRust benchmark (win-x64)
+# MiniExcelRust benchmark (win-arm64)
 
-- Date (UTC): 2026-10-05T10:24:54.3665492Z
-- OS: Microsoft Windows 10.0.26100
-- Architecture: X64
+- Date (UTC): 2026-10-05T10:25:30.8051329Z
+- OS: Microsoft Windows 10.0.26200
+- Architecture: Arm64
 - .NET SDK: 10.0.401
 - Target framework: net10.0
 - .NET runtime: .NET 10.0.12
@@ -13,9 +13,9 @@
 
 | Scenario | Runtime | Elapsed (ms) | First row (ms) | Managed allocation (MB) | Peak working set (MB) | Peak private (MB) | Speedup |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Cold | MiniExcelV2 | 2272.49 | 785.19 | 1552.23 | 56.44 | 28.82 | 1x |
-| Cold | MiniExcelRust | 999.59 | 346.77 | 116.62 | 45.34 | 25 | 2.27x |
-| Warm | MiniExcelV2 | 3749.97 | 395.28 | 4674.54 | 60.31 | 33.38 | 1x |
-| Warm | MiniExcelRust | 2685.23 | 340.05 | 304.99 | 48.99 | 28.64 | 1.4x |
+| Cold | MiniExcelV2 | 2959.52 | 937.48 | 1554.13 | 46.27 | 17.09 | 1x |
+| Cold | MiniExcelRust | 1067.56 | 346.35 | 111.54 | 34.3 | 12.99 | 2.77x |
+| Warm | MiniExcelV2 | 6642.78 | 543.02 | 4677.76 | 49.52 | 20.52 | 1x |
+| Warm | MiniExcelRust | 2937.79 | 339.09 | 304.99 | 37.08 | 16.19 | 2.26x |
 
 Managed allocation excludes allocations made inside Rust. Peak working set and peak private bytes include the complete process.
